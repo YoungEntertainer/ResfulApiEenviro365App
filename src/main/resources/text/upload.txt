@@ -1,0 +1,30 @@
+2024-03-20T05:09:16.856+02:00  INFO 2228 --- [eenviro365] [           main] c.e.a.g.s.e.Eenviro365Application        : Starting Eenviro365Application using Java 17.0.10 with PID 2228 (C:\Users\user\Desktop\NewRepo\Spring_Boot_File_upload\eenviro365\target\classes started by user in C:\Users\user\Desktop\NewRepo\Spring_Boot_File_upload\eenviro365)      
+2024-03-20T05:09:16.862+02:00  INFO 2228 --- [eenviro365] [           main] c.e.a.g.s.e.Eenviro365Application        : No active profile set, falling back to 1 default profile: "default"
+2024-03-20T05:09:19.028+02:00  INFO 2228 --- [eenviro365] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-20T05:09:19.241+02:00  INFO 2228 --- [eenviro365] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 165 ms. Found 1 JPA repository interface.
+2024-03-20T05:09:20.745+02:00  INFO 2228 --- [eenviro365] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-03-20T05:09:20.761+02:00  INFO 2228 --- [eenviro365] [           main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.36] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+2024-03-20T05:09:20.768+02:00  INFO 2228 --- [eenviro365] [           main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.36] using APR version [1.7.2].
+2024-03-20T05:09:20.808+02:00  INFO 2228 --- [eenviro365] [           main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1t  7 Feb 2023]
+2024-03-20T05:09:20.839+02:00  INFO 2228 --- [eenviro365] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-20T05:09:20.842+02:00  INFO 2228 --- [eenviro365] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-20T05:09:21.063+02:00  INFO 2228 --- [eenviro365] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-20T05:09:21.068+02:00  INFO 2228 --- [eenviro365] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4023 ms
+2024-03-20T05:09:21.210+02:00  INFO 2228 --- [eenviro365] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-20T05:09:22.009+02:00  INFO 2228 --- [eenviro365] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:C:/Users/user/Desktop/NewRepo/Spring_Boot_File_upload/eenviro365/src/main/resources/database/textdb user=SA
+2024-03-20T05:09:22.014+02:00  INFO 2228 --- [eenviro365] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-20T05:09:22.067+02:00  INFO 2228 --- [eenviro365] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:C:/Users/user/Desktop/NewRepo/Spring_Boot_File_upload/eenviro365/src/main/resources/database/textdb'
+2024-03-20T05:09:22.423+02:00  INFO 2228 --- [eenviro365] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-20T05:09:23.866+02:00  WARN 2228 --- [eenviro365] [           main] org.hibernate.orm.deprecation            : 
+HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting 
+and it will be selected by default)
+2024-03-20T05:09:33.496+02:00  INFO 2228 --- [eenviro365] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : 
+HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)     
+2024-03-20T05:09:33.502+02:00  INFO 2228 --- [eenviro365] [           main] j.LocalContainerEntityManagerFactoryBean : 
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-20T05:09:35.055+02:00  WARN 2228 --- [eenviro365] [           main] JpaBaseConfiguration$JpaWebConfiguration : 
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-20T05:09:36.603+02:00  INFO 2228 --- [eenviro365] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : 
+Tomcat started on port 8082 (http) with context path ''
+2024-03-20T05:09:36.650+02:00  INFO 2228 --- [eenviro365] [           main] c.e.a.g.s.e.Eenviro365Application        : 
+Started Eenviro365Application in 20.597 seconds (process running for 22.063)

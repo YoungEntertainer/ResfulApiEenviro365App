@@ -7,5 +7,5 @@ import com.enviro.assessment.grad001.sphelelefakude.eenviro365.model.UploadedFil
 
 @Repository
 public interface FileRepository extends JpaRepository<UploadedFile, Long> {
-    // Add custom methods for file-related operations if needed
+   
 }

@@ -1,0 +1,551 @@
+2024-03-21T08:19:20.478+02:00  INFO 5424 --- [eenviro365] [main] c.e.a.g.s.e.Eenviro365Application        : Starting Eenviro365Application using Java 17.0.10 with PID 5424 (C:\Users\user\Desktop\NewRepo\RestfulApiEenviro365App\target\classes started by user in C:\Users\user\Desktop\NewRepo\RestfulApiEenviro365App)
+2024-03-21T08:19:21.170+02:00  INFO 5424 --- [eenviro365] [main] c.e.a.g.s.e.Eenviro365Application        : No active profile set, falling back to 1 default profile: "default"
+2024-03-21T08:19:36.491+02:00  INFO 5424 --- [eenviro365] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-21T08:19:36.650+02:00  INFO 5424 --- [eenviro365] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109 ms. Found 1 JPA repository interface.
+2024-03-21T08:19:46.044+02:00  INFO 5424 --- [eenviro365] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-03-21T08:19:46.050+02:00  INFO 5424 --- [eenviro365] [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.36] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+2024-03-21T08:19:46.051+02:00  INFO 5424 --- [eenviro365] [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.36] using APR version [1.7.2].
+2024-03-21T08:19:46.354+02:00  INFO 5424 --- [eenviro365] [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1t  7 Feb 2023]
+2024-03-21T08:19:46.517+02:00  INFO 5424 --- [eenviro365] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-21T08:19:46.520+02:00  INFO 5424 --- [eenviro365] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-21T08:19:46.814+02:00  INFO 5424 --- [eenviro365] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-21T08:19:46.816+02:00  INFO 5424 --- [eenviro365] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 22882 ms
+2024-03-21T08:19:46.972+02:00  INFO 5424 --- [eenviro365] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-21T08:19:47.536+02:00  INFO 5424 --- [eenviro365] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:textdb user=SA
+2024-03-21T08:19:47.543+02:00  INFO 5424 --- [eenviro365] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-21T08:19:47.579+02:00  INFO 5424 --- [eenviro365] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:textdb'
+2024-03-21T08:19:48.923+02:00  INFO 5424 --- [eenviro365] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-21T08:19:49.731+02:00  INFO 5424 --- [eenviro365] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-03-21T08:19:49.955+02:00  INFO 5424 --- [eenviro365] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-21T08:19:51.232+02:00  INFO 5424 --- [eenviro365] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-21T08:19:51.558+02:00  WARN 5424 --- [eenviro365] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-21T08:19:54.863+02:00  INFO 5424 --- [eenviro365] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-21T08:19:55.084+02:00  INFO 5424 --- [eenviro365] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21T08:19:57.885+02:00  WARN 5424 --- [eenviro365] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-21T08:20:04.269+02:00  INFO 5424 --- [eenviro365] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2024-03-21T08:20:04.294+02:00  INFO 5424 --- [eenviro365] [main] c.e.a.g.s.e.Eenviro365Application        : Started Eenviro365Application in 47.746 seconds (process running for 49.65)
+2024-03-21T09:06:19.917+02:00  INFO 5424 --- [eenviro365] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21T09:06:24.539+02:00  INFO 5424 --- [eenviro365] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-21T09:06:26.250+02:00  INFO 5424 --- [eenviro365] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-21T10:29:04.786+02:00  INFO 9164 --- [eenviro365] [main] .g.s.e.c.FileControllerDocumentationTest : Starting FileControllerDocumentationTest using Java 17.0.10 with PID 9164 (started by user in C:\Users\user\Desktop\NewRepo\RestfulApiEenviro365App)
+2024-03-21T10:29:04.850+02:00  INFO 9164 --- [eenviro365] [main] .g.s.e.c.FileControllerDocumentationTest : No active profile set, falling back to 1 default profile: "default"
+2024-03-21T10:29:10.207+02:00  WARN 9164 --- [eenviro365] [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'fileController': Unsatisfied dependency expressed through field 'fileService': No qualifying bean of type 'com.enviro.assessment.grad001.sphelelefakude.eenviro365.service.FileService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-03-21T10:29:10.220+02:00  INFO 9164 --- [eenviro365] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-03-21T10:29:10.375+02:00 ERROR 9164 --- [eenviro365] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field fileService in com.enviro.assessment.grad001.sphelelefakude.eenviro365.controller.FileController required a bean of type 'com.enviro.assessment.grad001.sphelelefakude.eenviro365.service.FileService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.enviro.assessment.grad001.sphelelefakude.eenviro365.service.FileService' in your configuration.
+
+2024-03-21T10:29:10.452+02:00  WARN 9164 --- [eenviro365] [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener] to prepare test instance [com.enviro.assessment.grad001.sphelelefakude.eenviro365.controller.FileControllerDocumentationTest@7979b8b7]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@113e13f9 testClass = com.enviro.assessment.grad001.sphelelefakude.eenviro365.controller.FileControllerDocumentationTest, locations = [], classes = [com.enviro.assessment.grad001.sphelelefakude.eenviro365.Eenviro365Application], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true"], contextCustomizers = [[ImportsContextCustomizer@1c7f96b1 key = [org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration, org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration, org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration, org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration, org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration, org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.test.autoconfigure.web.reactive.WebTestClientAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.jsonb.JsonbAutoConfiguration, org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration, org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1c7696c6, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1e6a3214, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@6d4d66d2, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@d10614f8, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@12a5a04c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@6be968ce, org.springframework.boot.test.context.SpringBootTestAnnotation@1b7fa26a], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:142) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:98) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:757) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) ~[.cp/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'fileController': Unsatisfied dependency expressed through field 'fileService': No qualifying bean of type 'com.enviro.assessment.grad001.sphelelefakude.eenviro365.service.FileService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:787) ~[spring-beans-6.1.4.jar:6.1.4]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767) ~[spring-beans-6.1.4.jar:6.1.4]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145) ~[spring-beans-6.1.4.jar:6.1.4]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508) ~[spring-beans-6.1.4.jar:6.1.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1419) ~[spring-beans-6.1.4.jar:6.1.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.1.4.jar:6.1.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.4.jar:6.1.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.4.jar:6.1.4]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.4.jar:6.1.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.4.jar:6.1.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.4.jar:6.1.4]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.4.jar:6.1.4]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:959) ~[spring-context-6.1.4.jar:6.1.4]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.4.jar:6.1.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.3.jar:3.2.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.3.jar:3.2.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.3.jar:3.2.3]
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137) ~[spring-boot-test-3.2.3.jar:3.2.3]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.1.4.jar:6.1.4]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.1.4.jar:6.1.4]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1454) ~[spring-boot-3.2.3.jar:3.2.3]
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:553) ~[spring-boot-test-3.2.3.jar:3.2.3]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137) ~[spring-boot-test-3.2.3.jar:3.2.3]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108) ~[spring-boot-test-3.2.3.jar:3.2.3]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152) ~[spring-test-6.1.4.jar:6.1.4]
+	... 26 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.enviro.assessment.grad001.sphelelefakude.eenviro365.service.FileService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1880) ~[spring-beans-6.1.4.jar:6.1.4]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1406) ~[spring-beans-6.1.4.jar:6.1.4]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.4.jar:6.1.4]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784) ~[spring-beans-6.1.4.jar:6.1.4]
+	... 51 common frames omitted
+
+2024-03-21T10:30:43.062+02:00  INFO 19708 --- [eenviro365] [main] .g.s.e.c.FileControllerDocumentationTest : Starting FileControllerDocumentationTest using Java 17.0.10 with PID 19708 (started by user in C:\Users\user\Desktop\NewRepo\RestfulApiEenviro365App)
+2024-03-21T10:30:43.070+02:00  INFO 19708 --- [eenviro365] [main] .g.s.e.c.FileControllerDocumentationTest : No active profile set, falling back to 1 default profile: "default"
+2024-03-21T10:30:46.525+02:00  WARN 19708 --- [eenviro365] [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'fileController': Unsatisfied dependency expressed through field 'fileService': No qualifying bean of type 'com.enviro.assessment.grad001.sphelelefakude.eenviro365.service.FileService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-03-21T10:30:46.542+02:00  INFO 19708 --- [eenviro365] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-03-21T10:30:46.605+02:00 ERROR 19708 --- [eenviro365] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field fileService in com.enviro.assessment.grad001.sphelelefakude.eenviro365.controller.FileController required a bean of type 'com.enviro.assessment.grad001.sphelelefakude.eenviro365.service.FileService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.enviro.assessment.grad001.sphelelefakude.eenviro365.service.FileService' in your configuration.
+
+2024-03-21T10:30:46.637+02:00  WARN 19708 --- [eenviro365] [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener] to prepare test instance [com.enviro.assessment.grad001.sphelelefakude.eenviro365.controller.FileControllerDocumentationTest@7a04fea7]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@1c7f96b1 testClass = com.enviro.assessment.grad001.sphelelefakude.eenviro365.controller.FileControllerDocumentationTest, locations = [], classes = [com.enviro.assessment.grad001.sphelelefakude.eenviro365.Eenviro365Application], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true"], contextCustomizers = [[ImportsContextCustomizer@7979b8b7 key = [org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration, org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration, org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration, org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration, org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration, org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.test.autoconfigure.web.reactive.WebTestClientAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.jsonb.JsonbAutoConfiguration, org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration, org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@18df8434, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@229c6181, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@d86a6f, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@9cfa4f9d, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@2dc8de86, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@31ea9581, org.springframework.boot.test.context.SpringBootTestAnnotation@cd4d6cac], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:142) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:98) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:757) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) ~[.cp/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'fileController': Unsatisfied dependency expressed through field 'fileService': No qualifying bean of type 'com.enviro.assessment.grad001.sphelelefakude.eenviro365.service.FileService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:787) ~[spring-beans-6.1.4.jar:6.1.4]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767) ~[spring-beans-6.1.4.jar:6.1.4]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145) ~[spring-beans-6.1.4.jar:6.1.4]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508) ~[spring-beans-6.1.4.jar:6.1.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1419) ~[spring-beans-6.1.4.jar:6.1.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.1.4.jar:6.1.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.4.jar:6.1.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.4.jar:6.1.4]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.4.jar:6.1.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.4.jar:6.1.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.4.jar:6.1.4]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.4.jar:6.1.4]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:959) ~[spring-context-6.1.4.jar:6.1.4]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.4.jar:6.1.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.3.jar:3.2.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.3.jar:3.2.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.3.jar:3.2.3]
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137) ~[spring-boot-test-3.2.3.jar:3.2.3]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.1.4.jar:6.1.4]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.1.4.jar:6.1.4]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1454) ~[spring-boot-3.2.3.jar:3.2.3]
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:553) ~[spring-boot-test-3.2.3.jar:3.2.3]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137) ~[spring-boot-test-3.2.3.jar:3.2.3]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108) ~[spring-boot-test-3.2.3.jar:3.2.3]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152) ~[spring-test-6.1.4.jar:6.1.4]
+	... 26 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.enviro.assessment.grad001.sphelelefakude.eenviro365.service.FileService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1880) ~[spring-beans-6.1.4.jar:6.1.4]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1406) ~[spring-beans-6.1.4.jar:6.1.4]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.4.jar:6.1.4]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784) ~[spring-beans-6.1.4.jar:6.1.4]
+	... 51 common frames omitted
+
+2024-03-21T10:30:46.676+02:00  WARN 19708 --- [eenviro365] [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener] to prepare test instance [com.enviro.assessment.grad001.sphelelefakude.eenviro365.controller.FileControllerDocumentationTest@4b6d92e]
+
+java.lang.IllegalStateException: ApplicationContext failure threshold (1) exceeded: skipping repeated attempt to load context for [WebMergedContextConfiguration@1c7f96b1 testClass = com.enviro.assessment.grad001.sphelelefakude.eenviro365.controller.FileControllerDocumentationTest, locations = [], classes = [com.enviro.assessment.grad001.sphelelefakude.eenviro365.Eenviro365Application], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true"], contextCustomizers = [[ImportsContextCustomizer@7979b8b7 key = [org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration, org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration, org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration, org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration, org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration, org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.test.autoconfigure.web.reactive.WebTestClientAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.jsonb.JsonbAutoConfiguration, org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration, org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@18df8434, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@229c6181, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@d86a6f, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@9cfa4f9d, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@2dc8de86, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@31ea9581, org.springframework.boot.test.context.SpringBootTestAnnotation@cd4d6cac], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:145) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:142) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:98) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) ~[spring-test-6.1.4.jar:6.1.4]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:757) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) ~[.cp/:na]
+
+2024-03-21T11:03:55.940+02:00  INFO 20172 --- [eenviro365] [main] c.e.a.g.s.e.Eenviro365Application        : Starting Eenviro365Application using Java 17.0.10 with PID 20172 (C:\Users\user\Desktop\NewRepo\RestfulApiEenviro365App\target\classes started by user in C:\Users\user\Desktop\NewRepo\RestfulApiEenviro365App)
+2024-03-21T11:03:55.963+02:00  INFO 20172 --- [eenviro365] [main] c.e.a.g.s.e.Eenviro365Application        : No active profile set, falling back to 1 default profile: "default"
+2024-03-21T11:04:07.838+02:00  INFO 20172 --- [eenviro365] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-21T11:04:08.033+02:00  INFO 20172 --- [eenviro365] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 151 ms. Found 1 JPA repository interface.
+2024-03-21T11:04:13.257+02:00  INFO 20172 --- [eenviro365] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-03-21T11:04:13.265+02:00  INFO 20172 --- [eenviro365] [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.36] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+2024-03-21T11:04:13.266+02:00  INFO 20172 --- [eenviro365] [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.36] using APR version [1.7.2].
+2024-03-21T11:04:13.423+02:00  INFO 20172 --- [eenviro365] [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1t  7 Feb 2023]
+2024-03-21T11:04:13.509+02:00  INFO 20172 --- [eenviro365] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-21T11:04:13.510+02:00  INFO 20172 --- [eenviro365] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-21T11:04:13.857+02:00  INFO 20172 --- [eenviro365] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-21T11:04:13.859+02:00  INFO 20172 --- [eenviro365] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 17653 ms
+2024-03-21T11:04:14.104+02:00  INFO 20172 --- [eenviro365] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-21T11:04:20.074+02:00  INFO 20172 --- [eenviro365] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:textdb user=SA
+2024-03-21T11:04:20.077+02:00  INFO 20172 --- [eenviro365] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-21T11:04:20.114+02:00  INFO 20172 --- [eenviro365] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:textdb'
+2024-03-21T11:04:29.083+02:00  INFO 20172 --- [eenviro365] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-21T11:04:30.645+02:00  INFO 20172 --- [eenviro365] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-03-21T11:04:31.379+02:00  INFO 20172 --- [eenviro365] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-21T11:04:34.002+02:00  INFO 20172 --- [eenviro365] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-21T11:04:34.553+02:00  WARN 20172 --- [eenviro365] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-21T11:04:40.290+02:00  INFO 20172 --- [eenviro365] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-21T11:04:40.567+02:00  INFO 20172 --- [eenviro365] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21T11:04:43.189+02:00  WARN 20172 --- [eenviro365] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-21T11:04:47.081+02:00  INFO 20172 --- [eenviro365] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2024-03-21T11:04:47.105+02:00  INFO 20172 --- [eenviro365] [main] c.e.a.g.s.e.Eenviro365Application        : Started Eenviro365Application in 53.742 seconds (process running for 54.946)
+2024-03-21T17:47:00.344+02:00  INFO 10948 --- [eenviro365] [main] FileControllerTest                       : Starting FileControllerTest using Java 17.0.10 with PID 10948 (started by user in C:\Users\user\Desktop\NewRepo\RestfulApiEenviro365App)
+2024-03-21T17:47:00.374+02:00  INFO 10948 --- [eenviro365] [main] FileControllerTest                       : No active profile set, falling back to 1 default profile: "default"
+2024-03-21T17:47:09.845+02:00  INFO 10948 --- [eenviro365] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-21T17:47:09.861+02:00  INFO 10948 --- [eenviro365] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-21T17:47:10.887+02:00  INFO 10948 --- [eenviro365] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1026 ms
+2024-03-21T17:47:11.252+02:00  INFO 10948 --- [eenviro365] [main] FileControllerTest                       : Started FileControllerTest in 14.472 seconds (process running for 18.196)
+2024-03-21T17:47:11.788+02:00  WARN 10948 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No mapping for PUT /api/update/1
+2024-03-21T17:47:11.822+02:00  WARN 10948 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No endpoint PUT /api/update/1.
+2024-03-21T17:48:10.336+02:00  INFO 9588 --- [eenviro365] [main] FileControllerTest                       : Starting FileControllerTest using Java 17.0.10 with PID 9588 (started by user in C:\Users\user\Desktop\NewRepo\RestfulApiEenviro365App)
+2024-03-21T17:48:10.343+02:00  INFO 9588 --- [eenviro365] [main] FileControllerTest                       : No active profile set, falling back to 1 default profile: "default"
+2024-03-21T17:48:13.726+02:00  INFO 9588 --- [eenviro365] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-21T17:48:13.727+02:00  INFO 9588 --- [eenviro365] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-21T17:48:14.180+02:00  INFO 9588 --- [eenviro365] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 452 ms
+2024-03-21T17:48:14.326+02:00  INFO 9588 --- [eenviro365] [main] FileControllerTest                       : Started FileControllerTest in 4.932 seconds (process running for 7.123)
+2024-03-21T17:48:14.688+02:00  WARN 9588 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No mapping for GET /api/results/1
+2024-03-21T17:48:14.707+02:00  WARN 9588 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No endpoint GET /api/results/1.
+2024-03-21T17:51:20.126+02:00  INFO 20316 --- [eenviro365] [main] c.e.a.g.s.e.Eenviro365Application        : Starting Eenviro365Application using Java 17.0.10 with PID 20316 (C:\Users\user\Desktop\NewRepo\RestfulApiEenviro365App\target\classes started by user in C:\Users\user\Desktop\NewRepo\RestfulApiEenviro365App)
+2024-03-21T17:51:20.132+02:00  INFO 20316 --- [eenviro365] [main] c.e.a.g.s.e.Eenviro365Application        : No active profile set, falling back to 1 default profile: "default"
+2024-03-21T17:51:24.599+02:00  INFO 20316 --- [eenviro365] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-21T17:51:24.760+02:00  INFO 20316 --- [eenviro365] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107 ms. Found 1 JPA repository interface.
+2024-03-21T17:51:48.511+02:00  INFO 20316 --- [eenviro365] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-03-21T17:51:48.521+02:00  INFO 20316 --- [eenviro365] [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.36] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+2024-03-21T17:51:48.523+02:00  INFO 20316 --- [eenviro365] [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.36] using APR version [1.7.2].
+2024-03-21T17:51:48.731+02:00  INFO 20316 --- [eenviro365] [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1t  7 Feb 2023]
+2024-03-21T17:51:48.819+02:00  INFO 20316 --- [eenviro365] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-21T17:51:48.829+02:00  INFO 20316 --- [eenviro365] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-21T17:51:49.081+02:00  INFO 20316 --- [eenviro365] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-21T17:51:49.082+02:00  INFO 20316 --- [eenviro365] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 28652 ms
+2024-03-21T17:51:49.345+02:00  INFO 20316 --- [eenviro365] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-21T17:51:50.026+02:00  INFO 20316 --- [eenviro365] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:textdb user=SA
+2024-03-21T17:51:50.031+02:00  INFO 20316 --- [eenviro365] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-21T17:51:50.070+02:00  INFO 20316 --- [eenviro365] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:textdb'
+2024-03-21T17:51:51.027+02:00  INFO 20316 --- [eenviro365] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-21T17:51:51.411+02:00  INFO 20316 --- [eenviro365] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-03-21T17:51:51.586+02:00  INFO 20316 --- [eenviro365] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-21T17:51:52.431+02:00  INFO 20316 --- [eenviro365] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-21T17:51:52.790+02:00  WARN 20316 --- [eenviro365] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-21T17:51:55.787+02:00  INFO 20316 --- [eenviro365] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-21T17:51:55.905+02:00  INFO 20316 --- [eenviro365] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21T17:51:58.072+02:00  WARN 20316 --- [eenviro365] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-21T17:51:59.685+02:00  INFO 20316 --- [eenviro365] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2024-03-21T17:51:59.730+02:00  INFO 20316 --- [eenviro365] [main] c.e.a.g.s.e.Eenviro365Application        : Started Eenviro365Application in 40.591 seconds (process running for 41.455)
+2024-03-21T17:52:37.523+02:00  INFO 12872 --- [eenviro365] [main] FileControllerTest                       : Starting FileControllerTest using Java 17.0.10 with PID 12872 (started by user in C:\Users\user\Desktop\NewRepo\RestfulApiEenviro365App)
+2024-03-21T17:52:37.530+02:00  INFO 12872 --- [eenviro365] [main] FileControllerTest                       : No active profile set, falling back to 1 default profile: "default"
+2024-03-21T17:52:47.543+02:00  INFO 12872 --- [eenviro365] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-21T17:52:47.544+02:00  INFO 12872 --- [eenviro365] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-21T17:52:48.035+02:00  INFO 12872 --- [eenviro365] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 490 ms
+2024-03-21T17:52:48.229+02:00  INFO 12872 --- [eenviro365] [main] FileControllerTest                       : Started FileControllerTest in 11.858 seconds (process running for 15.303)
+2024-03-21T17:52:48.662+02:00  WARN 12872 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No mapping for GET /api/results/1
+2024-03-21T17:52:48.674+02:00  WARN 12872 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No endpoint GET /api/results/1.
+2024-03-21T17:55:23.804+02:00  INFO 20316 --- [eenviro365] [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-21T17:55:23.860+02:00  INFO 20316 --- [eenviro365] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-21T17:55:23.862+02:00  INFO 20316 --- [eenviro365] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-03-21T17:55:24.288+02:00  INFO 20316 --- [eenviro365] [http-nio-8082-exec-1] c.e.a.g.s.e.c.aspect.LoggingAspect       : Received API request: ResponseEntity com.enviro.assessment.grad001.sphelelefakude.eenviro365.controller.FileController.getProcessedResults(Long)
+2024-03-21T17:55:25.538+02:00  INFO 20316 --- [eenviro365] [http-nio-8082-exec-1] c.e.a.g.s.e.c.aspect.LoggingAspect       : Returned API response: <404 NOT_FOUND Not Found,File not found with ID: 1,[]>
+2024-03-21T17:55:37.537+02:00  INFO 20316 --- [eenviro365] [http-nio-8082-exec-2] c.e.a.g.s.e.c.aspect.LoggingAspect       : Received API request: ResponseEntity com.enviro.assessment.grad001.sphelelefakude.eenviro365.controller.FileController.getProcessedResults(Long)
+2024-03-21T17:55:37.547+02:00  INFO 20316 --- [eenviro365] [http-nio-8082-exec-2] c.e.a.g.s.e.c.aspect.LoggingAspect       : Returned API response: <404 NOT_FOUND Not Found,File not found with ID: 2,[]>
+2024-03-21T17:55:42.165+02:00  INFO 20316 --- [eenviro365] [http-nio-8082-exec-6] c.e.a.g.s.e.c.aspect.LoggingAspect       : Received API request: ResponseEntity com.enviro.assessment.grad001.sphelelefakude.eenviro365.controller.FileController.getProcessedResults(Long)
+2024-03-21T17:55:42.171+02:00  INFO 20316 --- [eenviro365] [http-nio-8082-exec-6] c.e.a.g.s.e.c.aspect.LoggingAspect       : Returned API response: <404 NOT_FOUND Not Found,File not found with ID: 3,[]>
+2024-03-21T18:36:54.127+02:00  INFO 4812 --- [eenviro365] [main] c.e.a.g.s.e.Eenviro365Application        : Starting Eenviro365Application using Java 17.0.10 with PID 4812 (C:\Users\user\Desktop\NewRepo\RestfulApiEenviro365App\target\classes started by user in C:\Users\user\Desktop\NewRepo\RestfulApiEenviro365App)
+2024-03-21T18:36:54.181+02:00  INFO 4812 --- [eenviro365] [main] c.e.a.g.s.e.Eenviro365Application        : No active profile set, falling back to 1 default profile: "default"
+2024-03-21T18:36:58.500+02:00  INFO 4812 --- [eenviro365] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-21T18:36:58.651+02:00  INFO 4812 --- [eenviro365] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 116 ms. Found 1 JPA repository interface.
+2024-03-21T18:37:03.220+02:00  INFO 4812 --- [eenviro365] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-03-21T18:37:03.226+02:00  INFO 4812 --- [eenviro365] [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.36] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+2024-03-21T18:37:03.228+02:00  INFO 4812 --- [eenviro365] [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.36] using APR version [1.7.2].
+2024-03-21T18:37:03.347+02:00  INFO 4812 --- [eenviro365] [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1t  7 Feb 2023]
+2024-03-21T18:37:03.369+02:00  INFO 4812 --- [eenviro365] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-21T18:37:03.370+02:00  INFO 4812 --- [eenviro365] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-21T18:37:03.581+02:00  INFO 4812 --- [eenviro365] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-21T18:37:03.583+02:00  INFO 4812 --- [eenviro365] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8976 ms
+2024-03-21T18:37:03.746+02:00  INFO 4812 --- [eenviro365] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-21T18:37:04.131+02:00  INFO 4812 --- [eenviro365] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:textdb user=SA
+2024-03-21T18:37:04.135+02:00  INFO 4812 --- [eenviro365] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-21T18:37:04.165+02:00  INFO 4812 --- [eenviro365] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:textdb'
+2024-03-21T18:37:05.255+02:00  INFO 4812 --- [eenviro365] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-21T18:37:05.504+02:00  INFO 4812 --- [eenviro365] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-03-21T18:37:05.775+02:00  INFO 4812 --- [eenviro365] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-21T18:37:06.545+02:00  INFO 4812 --- [eenviro365] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-21T18:37:06.757+02:00  WARN 4812 --- [eenviro365] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-21T18:37:08.675+02:00  INFO 4812 --- [eenviro365] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-21T18:37:08.810+02:00  INFO 4812 --- [eenviro365] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21T18:37:10.630+02:00  WARN 4812 --- [eenviro365] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-21T18:37:12.030+02:00  INFO 4812 --- [eenviro365] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2024-03-21T18:37:12.048+02:00  INFO 4812 --- [eenviro365] [main] c.e.a.g.s.e.Eenviro365Application        : Started Eenviro365Application in 19.833 seconds (process running for 21.238)
+2024-03-21T18:49:27.799+02:00  INFO 7000 --- [eenviro365] [main] FileControllerTest                       : Starting FileControllerTest using Java 17.0.10 with PID 7000 (started by user in C:\Users\user\Desktop\NewRepo\RestfulApiEenviro365App)
+2024-03-21T18:49:27.803+02:00  INFO 7000 --- [eenviro365] [main] FileControllerTest                       : No active profile set, falling back to 1 default profile: "default"
+2024-03-21T18:49:40.909+02:00  INFO 7000 --- [eenviro365] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-21T18:49:40.910+02:00  INFO 7000 --- [eenviro365] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-21T18:49:41.874+02:00  INFO 7000 --- [eenviro365] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 964 ms
+2024-03-21T18:49:42.194+02:00  INFO 7000 --- [eenviro365] [main] FileControllerTest                       : Started FileControllerTest in 16.014 seconds (process running for 22.019)
+2024-03-21T18:49:42.572+02:00  WARN 7000 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No mapping for GET /api/results/1
+2024-03-21T18:49:42.588+02:00  WARN 7000 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No endpoint GET /api/results/1.
+2024-03-21T18:58:21.335+02:00  INFO 4812 --- [eenviro365] [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-21T18:58:21.337+02:00  INFO 4812 --- [eenviro365] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-21T18:58:21.340+02:00  INFO 4812 --- [eenviro365] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-03-21T18:58:21.904+02:00  INFO 4812 --- [eenviro365] [http-nio-8082-exec-2] c.e.a.g.s.e.c.aspect.LoggingAspect       : Received API request: ResponseEntity com.enviro.assessment.grad001.sphelelefakude.eenviro365.controller.FileController.uploadFile(MultipartFile)
+2024-03-21T18:58:22.264+02:00  INFO 4812 --- [eenviro365] [http-nio-8082-exec-2] c.e.a.g.s.e.c.aspect.LoggingAspect       : Returned API response: <200 OK OK,File uploaded successfully with ID: 1,[]>
+2024-03-21T18:59:53.418+02:00  INFO 7108 --- [eenviro365] [main] FileControllerTest                       : Starting FileControllerTest using Java 17.0.10 with PID 7108 (started by user in C:\Users\user\Desktop\NewRepo\RestfulApiEenviro365App)
+2024-03-21T18:59:53.426+02:00  INFO 7108 --- [eenviro365] [main] FileControllerTest                       : No active profile set, falling back to 1 default profile: "default"
+2024-03-21T19:00:00.178+02:00  INFO 7108 --- [eenviro365] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-21T19:00:00.179+02:00  INFO 7108 --- [eenviro365] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-21T19:00:00.778+02:00  INFO 7108 --- [eenviro365] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 598 ms
+2024-03-21T19:00:01.044+02:00  INFO 7108 --- [eenviro365] [main] FileControllerTest                       : Started FileControllerTest in 8.676 seconds (process running for 12.998)
+2024-03-21T19:00:01.383+02:00  WARN 7108 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No mapping for GET /api/results/1
+2024-03-21T19:00:01.411+02:00  WARN 7108 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No endpoint GET /api/results/1.
+2024-03-21T19:08:24.563+02:00  INFO 4812 --- [eenviro365] [http-nio-8082-exec-5] c.e.a.g.s.e.c.aspect.LoggingAspect       : Received API request: ResponseEntity com.enviro.assessment.grad001.sphelelefakude.eenviro365.controller.FileController.getProcessedResults(Long)
+2024-03-21T19:08:24.725+02:00  INFO 4812 --- [eenviro365] [http-nio-8082-exec-5] c.e.a.g.s.e.c.aspect.LoggingAspect       : Returned API response: <404 NOT_FOUND Not Found,File not found with ID: 2,[]>
+2024-03-21T19:08:31.743+02:00  INFO 4812 --- [eenviro365] [http-nio-8082-exec-6] c.e.a.g.s.e.c.aspect.LoggingAspect       : Received API request: ResponseEntity com.enviro.assessment.grad001.sphelelefakude.eenviro365.controller.FileController.getProcessedResults(Long)
+2024-03-21T19:08:31.819+02:00  INFO 4812 --- [eenviro365] [http-nio-8082-exec-6] c.e.a.g.s.e.c.aspect.LoggingAspect       : Returned API response: <200 OK OK,UploadedFile{id=1, fileData='Timestamp, Temperature (C), Wind Speed (km/h), Pressure (hPa), Rainfall (mm), Humidity (%)
+2024-03-20T12:00:00Z, 25.5, 10.2, 1013.2, 0.5, 70.2
+2024-03-20T12:15:00Z, 26.0, 12.5, 1012.8, 0.2, 68.5
+2024-03-20T12:30:00Z, 25.8, 11.8, 1013.0, 0.3, 69.8'},[]>
+2024-03-21T19:09:13.213+02:00  INFO 236 --- [eenviro365] [main] FileControllerTest                       : Starting FileControllerTest using Java 17.0.10 with PID 236 (started by user in C:\Users\user\Desktop\NewRepo\RestfulApiEenviro365App)
+2024-03-21T19:09:13.217+02:00  INFO 236 --- [eenviro365] [main] FileControllerTest                       : No active profile set, falling back to 1 default profile: "default"
+2024-03-21T19:09:17.220+02:00  INFO 236 --- [eenviro365] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-21T19:09:17.221+02:00  INFO 236 --- [eenviro365] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-21T19:09:17.663+02:00  INFO 236 --- [eenviro365] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 441 ms
+2024-03-21T19:09:17.838+02:00  INFO 236 --- [eenviro365] [main] FileControllerTest                       : Started FileControllerTest in 5.558 seconds (process running for 7.802)
+2024-03-21T19:09:18.498+02:00  WARN 236 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No mapping for GET /api/results/1
+2024-03-21T19:09:18.521+02:00  WARN 236 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No endpoint GET /api/results/1.
+2024-03-21T19:09:18.732+02:00  WARN 236 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No mapping for PUT /api/update/1
+2024-03-21T19:09:18.734+02:00  WARN 236 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No endpoint PUT /api/update/1.
+2024-03-21T19:09:18.852+02:00  WARN 236 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No mapping for POST /api/upload
+2024-03-21T19:09:18.853+02:00  WARN 236 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No endpoint POST /api/upload.
+2024-03-21T19:09:18.955+02:00  WARN 236 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No mapping for DELETE /api/delete/1
+2024-03-21T19:09:18.957+02:00  WARN 236 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No endpoint DELETE /api/delete/1.
+2024-03-21T19:10:37.017+02:00  INFO 5072 --- [eenviro365] [main] FileControllerTest                       : Starting FileControllerTest using Java 17.0.10 with PID 5072 (started by user in C:\Users\user\Desktop\NewRepo\RestfulApiEenviro365App)
+2024-03-21T19:10:37.024+02:00  INFO 5072 --- [eenviro365] [main] FileControllerTest                       : No active profile set, falling back to 1 default profile: "default"
+2024-03-21T19:10:40.514+02:00  INFO 5072 --- [eenviro365] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-21T19:10:40.515+02:00  INFO 5072 --- [eenviro365] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-21T19:10:40.948+02:00  INFO 5072 --- [eenviro365] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 426 ms
+2024-03-21T19:10:41.095+02:00  INFO 5072 --- [eenviro365] [main] FileControllerTest                       : Started FileControllerTest in 5.077 seconds (process running for 7.372)
+2024-03-21T19:10:41.453+02:00  WARN 5072 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No mapping for GET /api/results/1
+2024-03-21T19:10:41.474+02:00  WARN 5072 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No endpoint GET /api/results/1.
+2024-03-21T19:20:48.111+02:00  INFO 4812 --- [eenviro365] [http-nio-8082-exec-10] c.e.a.g.s.e.c.aspect.LoggingAspect       : Received API request: ResponseEntity com.enviro.assessment.grad001.sphelelefakude.eenviro365.controller.FileController.getProcessedResults(Long)
+2024-03-21T19:20:48.115+02:00  INFO 4812 --- [eenviro365] [http-nio-8082-exec-10] c.e.a.g.s.e.c.aspect.LoggingAspect       : Returned API response: <404 NOT_FOUND Not Found,File not found with ID: 3,[]>
+2024-03-21T20:10:27.962+02:00  INFO 4812 --- [eenviro365] [http-nio-8082-exec-6] c.e.a.g.s.e.c.aspect.LoggingAspect       : Received API request: ResponseEntity com.enviro.assessment.grad001.sphelelefakude.eenviro365.controller.FileController.getProcessedResults(Long)
+2024-03-21T20:10:32.383+02:00  INFO 4812 --- [eenviro365] [http-nio-8082-exec-6] c.e.a.g.s.e.c.aspect.LoggingAspect       : Returned API response: <200 OK OK,UploadedFile{id=1, fileData='Timestamp, Temperature (C), Wind Speed (km/h), Pressure (hPa), Rainfall (mm), Humidity (%)
+2024-03-20T12:00:00Z, 25.5, 10.2, 1013.2, 0.5, 70.2
+2024-03-20T12:15:00Z, 26.0, 12.5, 1012.8, 0.2, 68.5
+2024-03-20T12:30:00Z, 25.8, 11.8, 1013.0, 0.3, 69.8'},[]>
+2024-03-21T20:18:55.039+02:00  INFO 2800 --- [eenviro365] [main] FileControllerTest                       : Starting FileControllerTest using Java 17.0.10 with PID 2800 (started by user in C:\Users\user\Desktop\NewRepo\RestfulApiEenviro365App)
+2024-03-21T20:18:55.045+02:00  INFO 2800 --- [eenviro365] [main] FileControllerTest                       : No active profile set, falling back to 1 default profile: "default"
+2024-03-21T20:19:27.667+02:00  INFO 2800 --- [eenviro365] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-21T20:19:27.669+02:00  INFO 2800 --- [eenviro365] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-21T20:19:31.718+02:00  INFO 2800 --- [eenviro365] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 4048 ms
+2024-03-21T20:19:34.217+02:00  INFO 2800 --- [eenviro365] [main] FileControllerTest                       : Started FileControllerTest in 38.633 seconds (process running for 45.981)
+2024-03-21T20:19:35.729+02:00  WARN 2800 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No mapping for POST /api/upload
+2024-03-21T20:19:35.762+02:00  WARN 2800 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No endpoint POST /api/upload.
+2024-03-21T20:22:04.689+02:00  INFO 10544 --- [eenviro365] [main] FileControllerTest                       : Starting FileControllerTest using Java 17.0.10 with PID 10544 (started by user in C:\Users\user\Desktop\NewRepo\RestfulApiEenviro365App)
+2024-03-21T20:22:04.704+02:00  INFO 10544 --- [eenviro365] [main] FileControllerTest                       : No active profile set, falling back to 1 default profile: "default"
+2024-03-21T20:22:12.480+02:00  INFO 10544 --- [eenviro365] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-21T20:22:12.481+02:00  INFO 10544 --- [eenviro365] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-21T20:22:12.921+02:00  INFO 10544 --- [eenviro365] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 439 ms
+2024-03-21T20:22:13.196+02:00  INFO 10544 --- [eenviro365] [main] FileControllerTest                       : Started FileControllerTest in 11.396 seconds (process running for 22.638)
+2024-03-21T20:22:13.559+02:00  WARN 10544 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No mapping for GET /api/results/1
+2024-03-21T20:22:13.580+02:00  WARN 10544 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No endpoint GET /api/results/1.
+2024-03-21T20:22:13.856+02:00  WARN 10544 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No mapping for PUT /api/update/1
+2024-03-21T20:22:13.859+02:00  WARN 10544 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No endpoint PUT /api/update/1.
+2024-03-21T20:22:13.957+02:00  WARN 10544 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No mapping for POST /api/upload
+2024-03-21T20:22:13.958+02:00  WARN 10544 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No endpoint POST /api/upload.
+2024-03-21T20:22:14.161+02:00  WARN 10544 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No mapping for DELETE /api/delete/1
+2024-03-21T20:22:14.162+02:00  WARN 10544 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No endpoint DELETE /api/delete/1.
+2024-03-21T20:23:37.019+02:00  INFO 10656 --- [eenviro365] [main] FileControllerTest                       : Starting FileControllerTest using Java 17.0.10 with PID 10656 (started by user in C:\Users\user\Desktop\NewRepo\RestfulApiEenviro365App)
+2024-03-21T20:23:37.034+02:00  INFO 10656 --- [eenviro365] [main] FileControllerTest                       : No active profile set, falling back to 1 default profile: "default"
+2024-03-21T20:23:54.545+02:00  INFO 10656 --- [eenviro365] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-21T20:23:54.546+02:00  INFO 10656 --- [eenviro365] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-21T20:23:54.943+02:00  INFO 10656 --- [eenviro365] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 395 ms
+2024-03-21T20:23:56.202+02:00  INFO 10656 --- [eenviro365] [main] FileControllerTest                       : Started FileControllerTest in 19.177 seconds (process running for 22.726)
+2024-03-21T20:23:57.316+02:00  WARN 10656 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No mapping for GET /api/results/1
+2024-03-21T20:23:57.345+02:00  WARN 10656 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No endpoint GET /api/results/1.
+2024-03-21T20:23:57.563+02:00  WARN 10656 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No mapping for PUT /api/update/1
+2024-03-21T20:23:57.578+02:00  WARN 10656 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No endpoint PUT /api/update/1.
+2024-03-21T20:23:57.708+02:00  WARN 10656 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No mapping for POST /api/upload
+2024-03-21T20:23:57.709+02:00  WARN 10656 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No endpoint POST /api/upload.
+2024-03-21T20:23:57.798+02:00  WARN 10656 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No mapping for DELETE /api/delete/1
+2024-03-21T20:23:57.802+02:00  WARN 10656 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No endpoint DELETE /api/delete/1.
+2024-03-21T20:25:06.238+02:00  INFO 13192 --- [eenviro365] [main] c.e.a.g.s.e.Eenviro365Application        : Starting Eenviro365Application using Java 17.0.10 with PID 13192 (C:\Users\user\Desktop\NewRepo\RestfulApiEenviro365App\target\classes started by user in C:\Users\user\Desktop\NewRepo\RestfulApiEenviro365App)
+2024-03-21T20:25:06.248+02:00  INFO 13192 --- [eenviro365] [main] c.e.a.g.s.e.Eenviro365Application        : No active profile set, falling back to 1 default profile: "default"
+2024-03-21T20:25:15.693+02:00  INFO 13192 --- [eenviro365] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-21T20:25:16.350+02:00  INFO 13192 --- [eenviro365] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 226 ms. Found 1 JPA repository interface.
+2024-03-21T20:25:23.454+02:00  INFO 13192 --- [eenviro365] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-03-21T20:25:23.535+02:00  INFO 13192 --- [eenviro365] [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.36] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+2024-03-21T20:25:23.536+02:00  INFO 13192 --- [eenviro365] [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.36] using APR version [1.7.2].
+2024-03-21T20:25:27.801+02:00  INFO 13192 --- [eenviro365] [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1t  7 Feb 2023]
+2024-03-21T20:25:29.381+02:00  INFO 13192 --- [eenviro365] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-21T20:25:29.382+02:00  INFO 13192 --- [eenviro365] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-21T20:25:29.638+02:00  INFO 13192 --- [eenviro365] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-21T20:25:29.639+02:00  INFO 13192 --- [eenviro365] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 22863 ms
+2024-03-21T20:25:29.920+02:00  INFO 13192 --- [eenviro365] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-21T20:25:30.853+02:00  INFO 13192 --- [eenviro365] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:textdb user=SA
+2024-03-21T20:25:30.857+02:00  INFO 13192 --- [eenviro365] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-21T20:25:30.882+02:00  INFO 13192 --- [eenviro365] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:textdb'
+2024-03-21T20:25:32.329+02:00  INFO 13192 --- [eenviro365] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-21T20:25:34.224+02:00  INFO 13192 --- [eenviro365] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-03-21T20:25:37.238+02:00  INFO 13192 --- [eenviro365] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-21T20:25:39.824+02:00  INFO 13192 --- [eenviro365] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-21T20:25:40.427+02:00  WARN 13192 --- [eenviro365] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-21T20:25:46.640+02:00  INFO 13192 --- [eenviro365] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-21T20:25:46.805+02:00  INFO 13192 --- [eenviro365] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21T20:25:51.969+02:00  WARN 13192 --- [eenviro365] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-21T20:25:55.870+02:00  INFO 13192 --- [eenviro365] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2024-03-21T20:25:55.944+02:00  INFO 13192 --- [eenviro365] [main] c.e.a.g.s.e.Eenviro365Application        : Started Eenviro365Application in 50.711 seconds (process running for 51.751)
+2024-03-21T20:26:53.023+02:00  INFO 13192 --- [eenviro365] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21T20:26:53.027+02:00  INFO 13192 --- [eenviro365] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-21T20:26:53.052+02:00  INFO 13192 --- [eenviro365] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-21T20:29:53.304+02:00  INFO 13520 --- [eenviro365] [main] c.e.a.g.s.e.Eenviro365Application        : Starting Eenviro365Application using Java 17.0.10 with PID 13520 (C:\Users\user\Desktop\NewRepo\RestfulApiEenviro365App\target\classes started by user in C:\Users\user\Desktop\NewRepo\RestfulApiEenviro365App)
+2024-03-21T20:29:53.349+02:00  INFO 13520 --- [eenviro365] [main] c.e.a.g.s.e.Eenviro365Application        : No active profile set, falling back to 1 default profile: "default"
+2024-03-21T20:29:56.068+02:00  INFO 13520 --- [eenviro365] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-21T20:29:56.269+02:00  INFO 13520 --- [eenviro365] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 165 ms. Found 1 JPA repository interface.
+2024-03-21T20:29:58.852+02:00  INFO 13520 --- [eenviro365] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-03-21T20:29:58.863+02:00  INFO 13520 --- [eenviro365] [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.36] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+2024-03-21T20:29:58.865+02:00  INFO 13520 --- [eenviro365] [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.36] using APR version [1.7.2].
+2024-03-21T20:29:58.942+02:00  INFO 13520 --- [eenviro365] [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1t  7 Feb 2023]
+2024-03-21T20:29:58.967+02:00  INFO 13520 --- [eenviro365] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-21T20:29:58.968+02:00  INFO 13520 --- [eenviro365] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-21T20:29:59.149+02:00  INFO 13520 --- [eenviro365] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-21T20:29:59.152+02:00  INFO 13520 --- [eenviro365] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5662 ms
+2024-03-21T20:29:59.325+02:00  INFO 13520 --- [eenviro365] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-21T20:29:59.894+02:00  INFO 13520 --- [eenviro365] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:textdb user=SA
+2024-03-21T20:29:59.900+02:00  INFO 13520 --- [eenviro365] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-21T20:29:59.950+02:00  INFO 13520 --- [eenviro365] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:textdb'
+2024-03-21T20:30:00.580+02:00  INFO 13520 --- [eenviro365] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-21T20:30:00.844+02:00  INFO 13520 --- [eenviro365] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-03-21T20:30:00.964+02:00  INFO 13520 --- [eenviro365] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-21T20:30:02.096+02:00  INFO 13520 --- [eenviro365] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-21T20:30:02.354+02:00  WARN 13520 --- [eenviro365] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-21T20:30:04.138+02:00  INFO 13520 --- [eenviro365] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-21T20:30:04.249+02:00  INFO 13520 --- [eenviro365] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21T20:30:05.170+02:00  WARN 13520 --- [eenviro365] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-21T20:30:06.598+02:00  INFO 13520 --- [eenviro365] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2024-03-21T20:30:06.629+02:00  INFO 13520 --- [eenviro365] [main] c.e.a.g.s.e.Eenviro365Application        : Started Eenviro365Application in 14.306 seconds (process running for 21.028)
+2024-03-21T20:32:13.073+02:00  INFO 13520 --- [eenviro365] [http-nio-8082-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-21T20:32:13.075+02:00  INFO 13520 --- [eenviro365] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-21T20:32:13.079+02:00  INFO 13520 --- [eenviro365] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-03-21T20:32:13.705+02:00  INFO 13520 --- [eenviro365] [http-nio-8082-exec-3] c.e.a.g.s.e.c.aspect.LoggingAspect       : Received API request: ResponseEntity com.enviro.assessment.grad001.sphelelefakude.eenviro365.controller.FileController.deleteFile(Long)
+2024-03-21T20:32:14.474+02:00  INFO 13520 --- [eenviro365] [http-nio-8082-exec-3] c.e.a.g.s.e.c.aspect.LoggingAspect       : Returned API response: <200 OK OK,File deleted successfully.,[]>
+2024-03-21T20:37:30.514+02:00  INFO 13520 --- [eenviro365] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21T20:37:30.521+02:00  INFO 13520 --- [eenviro365] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-21T20:37:30.595+02:00  INFO 13520 --- [eenviro365] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-21T20:37:54.675+02:00  INFO 13888 --- [eenviro365] [main] c.e.a.g.s.e.Eenviro365Application        : Starting Eenviro365Application using Java 17.0.10 with PID 13888 (C:\Users\user\Desktop\NewRepo\RestfulApiEenviro365App\target\classes started by user in C:\Users\user\Desktop\NewRepo\RestfulApiEenviro365App)
+2024-03-21T20:37:54.690+02:00  INFO 13888 --- [eenviro365] [main] c.e.a.g.s.e.Eenviro365Application        : No active profile set, falling back to 1 default profile: "default"
+2024-03-21T20:37:56.841+02:00  INFO 13888 --- [eenviro365] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-21T20:37:56.983+02:00  INFO 13888 --- [eenviro365] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 121 ms. Found 1 JPA repository interface.
+2024-03-21T20:37:59.004+02:00  INFO 13888 --- [eenviro365] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2024-03-21T20:37:59.012+02:00  INFO 13888 --- [eenviro365] [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.36] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+2024-03-21T20:37:59.014+02:00  INFO 13888 --- [eenviro365] [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.36] using APR version [1.7.2].
+2024-03-21T20:37:59.043+02:00  INFO 13888 --- [eenviro365] [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1t  7 Feb 2023]
+2024-03-21T20:37:59.127+02:00  INFO 13888 --- [eenviro365] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-21T20:37:59.129+02:00  INFO 13888 --- [eenviro365] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-21T20:37:59.333+02:00  INFO 13888 --- [eenviro365] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-21T20:37:59.335+02:00  INFO 13888 --- [eenviro365] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4484 ms
+2024-03-21T20:37:59.491+02:00  INFO 13888 --- [eenviro365] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-21T20:38:00.078+02:00  INFO 13888 --- [eenviro365] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:textdb user=SA
+2024-03-21T20:38:00.084+02:00  INFO 13888 --- [eenviro365] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-21T20:38:00.139+02:00  INFO 13888 --- [eenviro365] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:textdb'
+2024-03-21T20:38:00.633+02:00  INFO 13888 --- [eenviro365] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-21T20:38:00.912+02:00  INFO 13888 --- [eenviro365] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-03-21T20:38:01.037+02:00  INFO 13888 --- [eenviro365] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-21T20:38:01.776+02:00  INFO 13888 --- [eenviro365] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-21T20:38:01.994+02:00  WARN 13888 --- [eenviro365] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-21T20:38:03.726+02:00  INFO 13888 --- [eenviro365] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-21T20:38:03.871+02:00  INFO 13888 --- [eenviro365] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-21T20:38:04.983+02:00  WARN 13888 --- [eenviro365] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-21T20:38:06.322+02:00  INFO 13888 --- [eenviro365] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path ''
+2024-03-21T20:38:06.345+02:00  INFO 13888 --- [eenviro365] [main] c.e.a.g.s.e.Eenviro365Application        : Started Eenviro365Application in 12.61 seconds (process running for 14.007)
+2024-03-21T20:38:38.970+02:00  INFO 6656 --- [eenviro365] [main] FileControllerTest                       : Starting FileControllerTest using Java 17.0.10 with PID 6656 (started by user in C:\Users\user\Desktop\NewRepo\RestfulApiEenviro365App)
+2024-03-21T20:38:38.978+02:00  INFO 6656 --- [eenviro365] [main] FileControllerTest                       : No active profile set, falling back to 1 default profile: "default"
+2024-03-21T20:39:04.611+02:00  INFO 6656 --- [eenviro365] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-21T20:39:04.617+02:00  INFO 6656 --- [eenviro365] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-21T20:39:05.204+02:00  INFO 6656 --- [eenviro365] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 586 ms
+2024-03-21T20:39:05.431+02:00  INFO 6656 --- [eenviro365] [main] FileControllerTest                       : Started FileControllerTest in 28.95 seconds (process running for 31.815)
+2024-03-21T20:39:05.943+02:00  WARN 6656 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No mapping for GET /api/results/1
+2024-03-21T20:39:05.967+02:00  WARN 6656 --- [eenviro365] [main] o.s.web.servlet.PageNotFound             : No endpoint GET /api/results/1.
+2024-03-21T20:43:24.631+02:00  INFO 13888 --- [eenviro365] [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-21T20:43:24.656+02:00  INFO 13888 --- [eenviro365] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-21T20:43:24.692+02:00  INFO 13888 --- [eenviro365] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 35 ms
+2024-03-21T20:43:25.132+02:00  INFO 13888 --- [eenviro365] [http-nio-8082-exec-1] c.e.a.g.s.e.c.aspect.LoggingAspect       : Received API request: ResponseEntity com.enviro.assessment.grad001.sphelelefakude.eenviro365.controller.FileController.getProcessedResults(Long)
+2024-03-21T20:43:25.859+02:00  INFO 13888 --- [eenviro365] [http-nio-8082-exec-1] c.e.a.g.s.e.c.aspect.LoggingAspect       : Returned API response: <404 NOT_FOUND Not Found,File not found with ID: 1,[]>
+2024-03-21T20:43:49.717+02:00  INFO 13888 --- [eenviro365] [http-nio-8082-exec-4] c.e.a.g.s.e.c.aspect.LoggingAspect       : Received API request: ResponseEntity com.enviro.assessment.grad001.sphelelefakude.eenviro365.controller.FileController.uploadFile(MultipartFile)
+2024-03-21T20:43:51.079+02:00  INFO 13888 --- [eenviro365] [http-nio-8082-exec-4] c.e.a.g.s.e.c.aspect.LoggingAspect       : Returned API response: <200 OK OK,File uploaded successfully with ID: 1,[]>
+2024-03-21T20:45:17.694+02:00  INFO 13888 --- [eenviro365] [http-nio-8082-exec-7] c.e.a.g.s.e.c.aspect.LoggingAspect       : Received API request: ResponseEntity com.enviro.assessment.grad001.sphelelefakude.eenviro365.controller.FileController.getProcessedResults(Long)
+2024-03-21T20:45:17.776+02:00  INFO 13888 --- [eenviro365] [http-nio-8082-exec-7] c.e.a.g.s.e.c.aspect.LoggingAspect       : Returned API response: <200 OK OK,UploadedFile{id=1, fileData='Timestamp, Temperature (C), Wind Speed (km/h), Pressure (hPa), Rainfall (mm), Humidity (%)
+2024-03-20T12:00:00Z, 25.5, 10.2, 1013.2, 0.5, 70.2
+2024-03-20T12:15:00Z, 26.0, 12.5, 1012.8, 0.2, 68.5
+2024-03-20T12:30:00Z, 25.8, 11.8, 1013.0, 0.3, 69.8'},[]>

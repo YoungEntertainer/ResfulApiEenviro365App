@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-Eenviro365Application<eenviro365>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.enviro.assessment.grad001.sphelelefakude.eenviro365.Eenviro365Application",
+            "projectName": "eenviro365",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

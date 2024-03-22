@@ -3,9 +3,6 @@
 # EEnviro365 File Processing REST API
 Welcome to the EEnviro365 File Processing REST API documentation. This API facilitates file data processing for environmental analysis. Clients can upload text files containing environmental data and retrieve processed results through simple API requests. This document provides an overview of the API, its endpoints, request and response formats, and error handling procedures.
 
-# Scenario
-EEnviro365 is a leading environmental consulting firm aiming to develop a RESTful API to streamline file data processing for their clients. The API will allow clients to upload text files containing environmental data for analysis and retrieve processed results via API requests, which will be saved in the database. As a software developer tasked with building this API, your goal is to design and implement a solution that meets the requirements outlined by Enviro365.
-
 # Task
 Build a Spring Boot application that exposes a REST API for clients.
 Design REST API endpoints, specifying request and response formats for each endpoint.

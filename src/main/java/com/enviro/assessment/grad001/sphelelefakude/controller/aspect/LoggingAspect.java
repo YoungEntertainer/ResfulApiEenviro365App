@@ -1,4 +1,4 @@
-package com.enviro.assessment.grad001.sphelelefakude.eenviro365.controller.aspect;
+package com.enviro.assessment.grad001.sphelelefakude.controller.aspect;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;

@@ -1,4 +1,4 @@
-package com.enviro.assessment.grad001.sphelelefakude.eenviro365;
+package com.enviro.assessment.grad001.sphelelefakude;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

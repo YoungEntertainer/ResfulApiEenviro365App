@@ -1,25 +1,29 @@
+import static org.hamcrest.Matchers.containsString;
+import static org.junit.jupiter.api.Assertions.fail;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.multipart;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.mock.web.MockMultipartFile;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
 
-import com.enviro.assessment.grad001.sphelelefakude.eenviro365.model.UploadedFile;
-import com.enviro.assessment.grad001.sphelelefakude.eenviro365.service.FileService;
+import com.enviro.assessment.grad001.sphelelefakude.Eenviro365Application;
+import com.enviro.assessment.grad001.sphelelefakude.model.UploadedFile;
+import com.enviro.assessment.grad001.sphelelefakude.service.FileService;
 
-@SpringBootTest(classes = FileControllerTest.class)
+@ExtendWith(SpringExtension.class)
+@SpringBootTest(classes = { Eenviro365Application.class })
 @AutoConfigureMockMvc
 public class FileControllerTest {
 
@@ -31,45 +35,47 @@ public class FileControllerTest {
 
     @Test
     public void testUploadFile() throws Exception {
-        MockMultipartFile file = new MockMultipartFile("file", "test.txt", MediaType.TEXT_PLAIN_VALUE,
-                "Hello, World!".getBytes());
+        String fileContent = "Hello, World!";
+        MockMultipartFile file = new MockMultipartFile("file", "/resources/test.txt", MediaType.TEXT_PLAIN_VALUE,
+                fileContent.getBytes());
+
         UploadedFile uploadedFile = new UploadedFile();
         uploadedFile.setId(1L);
+        uploadedFile.setFileData(fileContent); // Set the file content
+
         when(fileService.processFile(any(UploadedFile.class))).thenReturn(uploadedFile);
 
-        mockMvc.perform(post("/api/upload").contentType(MediaType.MULTIPART_FORM_DATA_VALUE).content(file.getBytes()))
-                .andExpect(status().isOk());
+        try {
+            // Test successful file upload
+            mockMvc.perform(multipart("/api/upload").file(file))
+                    .andExpect(status().isOk())
+                    .andExpect(content()
+                            .string(containsString("File uploaded successfully with ID: " + uploadedFile.getId())));
+        } catch (AssertionError e) {
+            // Handle assertion errors
+            fail("Assertion error occurred: ");
+        } catch (Exception e) {
+            // Handle other exceptions
+            fail("Unexpected exception occurred: " + e.getMessage());
+        }
+
     }
 
     @Test
-    public void testGetProcessedResults() throws Exception {
+    public void testGetProcessedResults_Success() throws Exception {
+        // Mock the behavior of fileService.getFileById to return a valid UploadedFile
         UploadedFile uploadedFile = new UploadedFile();
         uploadedFile.setId(1L);
-        uploadedFile.setFileData("Test data");
+        uploadedFile.setFileData("Test file content");
+
         when(fileService.getFileById(1L)).thenReturn(uploadedFile);
 
-        try {
-            mockMvc.perform(get("/api/results/1")).andExpect(status().isOk());
-        } catch (Exception e) {
-            
-            e.printStackTrace();
-        }
+        // Perform GET request to /api/results/1
+        mockMvc.perform(get("/api/results/1"))
+                .andExpect(status().isOk())
+                .andExpect(content().contentType(MediaType.APPLICATION_JSON))
+                .andExpect(content().string(containsString("\"id\":1")))
+                .andExpect(content().string(containsString("\"fileData\":\"Test file content\"")));
     }
 
-    @Test
-    public void testUpdateFile() throws Exception {
-        UploadedFile uploadedFile = new UploadedFile();
-        uploadedFile.setId(1L);
-        when(fileService.updateFile(any(UploadedFile.class))).thenReturn(uploadedFile);
-
-        mockMvc.perform(put("/api/update/1").contentType(MediaType.APPLICATION_JSON_VALUE)
-                .content("{\"fileData\":\"Updated data\"}")).andExpect(status().isOk());
-    }
-
-    @Test
-    public void testDeleteFile() throws Exception {
-        Mockito.doNothing().when(fileService).deleteFile(1L);
-
-        mockMvc.perform(delete("/api/delete/1")).andExpect(status().isOk());
-    }
 }

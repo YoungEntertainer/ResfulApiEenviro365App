@@ -623,3 +623,11 @@ end;
 2024-03-22T12:33:26.005+02:00  INFO 8276 --- [eenviro365] [main] c.e.a.g.s.Eenviro365Application          : Started Eenviro365Application in 22.264 seconds (process running for 23.719)
 2024-03-22T12:52:54.455+02:00  INFO 8276 --- [eenviro365] [http-nio-8082-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2024-03-22T12:52:55.197+02:00  INFO 8276 --- [eenviro365] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-22T12:52:57.603+02:00  INFO 8276 --- [eenviro365] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2379 ms
+2024-03-22T12:53:02.635+02:00  INFO 8276 --- [eenviro365] [http-nio-8082-exec-3] c.e.a.g.s.c.aspect.LoggingAspect         : Received API request: ResponseEntity com.enviro.assessment.grad001.sphelelefakude.controller.FileController.uploadFile(MultipartFile)
+2024-03-22T12:53:05.671+02:00  INFO 8276 --- [eenviro365] [http-nio-8082-exec-3] c.e.a.g.s.c.aspect.LoggingAspect         : Returned API response: <200 OK OK,File uploaded successfully with ID: 1,[]>
+2024-03-22T12:53:17.386+02:00  INFO 8276 --- [eenviro365] [http-nio-8082-exec-2] c.e.a.g.s.c.aspect.LoggingAspect         : Received API request: ResponseEntity com.enviro.assessment.grad001.sphelelefakude.controller.FileController.getProcessedResults(Long)
+2024-03-22T12:53:18.009+02:00  INFO 8276 --- [eenviro365] [http-nio-8082-exec-2] c.e.a.g.s.c.aspect.LoggingAspect         : Returned API response: <200 OK OK,UploadedFile{id=1, fileData='Timestamp, Temperature (C), Wind Speed (km/h), Pressure (hPa), Rainfall (mm), Humidity (%)
+2024-03-20T12:00:00Z, 25.5, 10.2, 1013.2, 0.5, 70.2
+2024-03-20T12:15:00Z, 26.0, 12.5, 1012.8, 0.2, 68.5
+2024-03-20T12:30:00Z, 25.8, 11.8, 1013.0, 0.3, 69.8'},[]>
